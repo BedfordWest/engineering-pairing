@@ -56,11 +56,16 @@ public class IfSolution {
 		public boolean isInStore(GroceryStore store) {
 			return (store.quantity(this) > 0);
 		}
+
+		public boolean isMeat() {
+			return EnumSet.of(STEAK, BRISKET).contains(this);
+		}
 	}
 
 	private void addFoodToCart(GroceryStore store) {
 		Arrays.stream(GroceryItem.values())
 			.filter(item -> store.quantity(item) > 0)
+			.filter(item -> !(item.isMeat() && !store.hasMeatCounter))
 			.forEach(item -> cart.add(item));
 	}
 
