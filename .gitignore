@@ -1,23 +1,32 @@
-# Compiled class file
-*.class
-
-# Log file
+# IGNORE - intelliJ
+.idea/*
+.project*
+target/
+*.orig
+.idea/workspace.xml
+*.iml
+Test Results*
 *.log
+*.class
+out/
 
-# BlueJ files
-*.ctxt
+# ALLOW - intelliJ
+!.idea/fileTemplates/
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# IGNORE - OSX
+.DS_Store
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+# IGNORE - Emacs
+~*
+*~
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# IGNORE - VSCode
+.settings
+.classpath
+.vscode
+*.code-workspace
+
+# IGNORE - Other
+.arcconfig
+src/test/java/runners/local
+*proxyLog.json*
