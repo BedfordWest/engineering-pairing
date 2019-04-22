@@ -9,7 +9,6 @@ Test Results*
 *.log
 *.class
 out/
-src/.idea/*
 
 # ALLOW - intelliJ
 !.idea/fileTemplates/
@@ -32,4 +31,4 @@ src/.idea/*
 src/test/java/runners/local
 *proxyLog.json*
 
-*Output*
+*Out
